@@ -3,22 +3,29 @@ body {
   place-items: center;
   font-family: spotify-circular, Helvetica, Arial, sans-serif;
   margin: 0px;
-  color: #222326;
+  color: #181818;
   background-color: #fff;
 }
 
+.header {
+  display: grid;
+  place-items: center;
+}
+
 h1 {
-  font-size: 32px;
+  font-size: 30px;
+  text-align: center;
 }
 
 h2 {
   font-size: 18px;
+  text-align: center;
 }
 
 #logo {
   min-width: 70px;
-  max-width: 130px;
-  padding: 1.5rem;
+  max-width: 140px;
+  margin-top: 2rem;
 }
 
 form {
@@ -28,3 +35,8 @@ form {
 a {
   color: #1db954;
 }
+
+.footing {
+  text-align: center;
+}
+

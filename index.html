@@ -7,10 +7,12 @@
     <link href="styles.css" rel="stylesheet" />
   </head>
   <body>
-    <a href="https://spotify.com"><img id="logo" src="Spotify_Logo.png" alt="spotify logo"/></a>
-    <h1>Sign up for free to start listening.</h1>
-    <button href="*">SIGN UP WITH FACEBOOK</button>
-    <p>or</p>
+    <div class="header">
+      <a href="https://spotify.com"><img id="logo" src="Spotify_Logo.png" alt="spotify logo"/></a>
+      <h1>Sign up for free to start listening.</h1>
+      <button href="*">SIGN UP WITH FACEBOOK</button>
+      <p>or</p>
+    </div>
     <form action="*" method="post">
       <h2>Sign up with your email address</h2>
       <fieldset>
@@ -34,46 +36,50 @@
         <label for="birthday">What's your date of birth?</label>
         <input type="date" name="birthday" />
       </fieldset>
-      
+     
+
       <fieldset>
-        <label>Whats your gender?</label>
-      <label>
-        <input type="radio" name="gender" value="Male" />
-        <p>Male</p>
-      </label>
-      <label>
-        <input type="radio" name="gender" value="Female" />
-        <p>Female</p>
-      </label>
-      <label>
-        <input type="radio" name="gender" value="Non-binary" />
-        <p>Non-binary</p>
-      </label>
+        <p>Whats your gender?</p>
+        <label>
+          <input type="radio" name="gender" value="Male" />
+          Male
+        </label>
+        <label>
+          <input type="radio" name="gender" value="Female" />
+          Female
+        </label>
+        <label>
+          <input type="radio" name="gender" value="Non-binary" />
+          Non-binary
+        </label>
       </fieldset>
 
       
-
-      <input type="checkbox" name="data-consent" />
-      <p>
-        Share my registration data with Spotify's content providers for
-        marketing purposes. Note that your data may be transferred to a country
-        outside of the EEA as described in our privacy policy.
-      </p>
+      <fieldset>
+        <label>
+          <input type="checkbox" name="data-consent" />
+          Share my registration data with Spotify's content providers for marketing purposes. Note that your data may be transferred to a country outside of the EEA as described in our privacy policy.
+        </label>
+      </fieldset>
+      
 
       <!--TODO ReCAPTCHA goes here-->
-
-      <p>
-        By clicking on Sign up, you agree to
+      <div class="footing">
+        <p>
+          By clicking on Sign up, you agree to
         <a href="*">Spotify's Terms and Conditions of Use</a>.
-      </p>
-      <p>
-        To learn more about how Spotify collects, uses, shares and protects your
+        </p>
+        <p>
+          To learn more about how Spotify collects, uses, shares and protects your
         personal data please read Spotify's <a href="*">Privacy Policy</a>.
-      </p>
+        </p>
 
-      <input type="submit" name="create" value="SIGN UP" />
+        <input type="submit" name="create" value="SIGN UP" />
 
-      <p>Have an account? <a href="*">Log in</a>.</p>
+        <p>
+          Have an account? <a href="*">Log in</a>.
+        </p>
+      </div>
     </form>
   </body>
 </html>
