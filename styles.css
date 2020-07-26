@@ -1,7 +1,30 @@
 body {
-  background-color: lightgrey;
+  display: grid;
+  place-items: center;
+  font-family: spotify-circular, Helvetica, Arial, sans-serif;
+  margin: 0px;
+  color: #222326;
+  background-color: #fff;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 18px;
 }
 
 #logo {
-  width: 200px;
+  min-width: 70px;
+  max-width: 130px;
+  padding: 1.5rem;
+}
+
+form {
+  max-width: 500px;
+}
+
+a {
+  color: #1db954;
 }

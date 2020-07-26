@@ -4,38 +4,75 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link href="styles.css" rel="stylesheet" />
   </head>
   <body>
-    <img id="logo" src="Spotify_Logo.png" alt="spotify logo" style="max-width: 150px;"/> 
-    <!--TODO put image styles in CSS-->
+    <a href="https://spotify.com"><img id="logo" src="Spotify_Logo.png" alt="spotify logo"/></a>
     <h1>Sign up for free to start listening.</h1>
     <button href="*">SIGN UP WITH FACEBOOK</button>
     <p>or</p>
     <form action="*" method="post">
       <h2>Sign up with your email address</h2>
-      <p>What's your email?</p>
-      <input type="email" name="email-address" />
-      <p>Confirm your email</p>
-      <input type="email" name="confirm-email-address" />
-      <p>Create a password</p>
-      <input type="password" name="password" />
-      <p>What should we call you?</p>
-      <input type="text" name="profile-name">
-      <p>What's your date of birth?</p>
-      <input type="date" name="birthday">
-      <p>Whats your gender?</p>
-      <input type="radio" name="gender" value="Male"><p>Male</p>
-      <input type="radio" name="gender" value="Female"><p>Female</p>
-      <input type="radio" name="gender" value="Non-binary"><p>Non-binary</p>
-      <input type="checkbox" name="data-consent"><p>Share my registration data with Spotify's content providers for marketing purposes. Note that your data may be transferred to a country outside of the EEA as described in our privacy policy.</p>
+      <fieldset>
+        <label for="email-address">What's your email?</label>
+        <input type="email" name="email-address" id="email-address" placeholder="Enter your email."/>
+      </fieldset>
+      <fieldset>
+        <label for="confirm-email-address">Confirm your email</label>
+        <input type="email" name="confirm-email-address" id="confirm-email-address" placeholder="Enter your email again."/>
+      </fieldset>
+      <fieldset>
+        <label for="password">Create a password</label>
+        <input type="password" name="password" id="password" placeholder="Create a password."/>
+      </fieldset>
+      <fieldset>
+        <label for="profile-name">What should we call you?</label>
+        <input type="text" name="profile-name" id="profile-name" placeholder="Enter a profile name."/>
+      </fieldset>      
       
+      <fieldset>
+        <label for="birthday">What's your date of birth?</label>
+        <input type="date" name="birthday" />
+      </fieldset>
+      
+      <fieldset>
+        <label>Whats your gender?</label>
+      <label>
+        <input type="radio" name="gender" value="Male" />
+        <p>Male</p>
+      </label>
+      <label>
+        <input type="radio" name="gender" value="Female" />
+        <p>Female</p>
+      </label>
+      <label>
+        <input type="radio" name="gender" value="Non-binary" />
+        <p>Non-binary</p>
+      </label>
+      </fieldset>
+
+      
+
+      <input type="checkbox" name="data-consent" />
+      <p>
+        Share my registration data with Spotify's content providers for
+        marketing purposes. Note that your data may be transferred to a country
+        outside of the EEA as described in our privacy policy.
+      </p>
+
       <!--TODO ReCAPTCHA goes here-->
 
-      <p>By clicking on Sign up, you agree to <a href="*">Spotify's Terms and Conditions of Use</a>.</p>
-      <p>To learn more about how Spotify collects, uses, shares and protects your personal data please read Spotify's <a href="*">Privacy Policy</a>.</p>
+      <p>
+        By clicking on Sign up, you agree to
+        <a href="*">Spotify's Terms and Conditions of Use</a>.
+      </p>
+      <p>
+        To learn more about how Spotify collects, uses, shares and protects your
+        personal data please read Spotify's <a href="*">Privacy Policy</a>.
+      </p>
 
-      <input type="submit" name="create" value="Create Account" />
-      
+      <input type="submit" name="create" value="SIGN UP" />
+
       <p>Have an account? <a href="*">Log in</a>.</p>
     </form>
   </body>
