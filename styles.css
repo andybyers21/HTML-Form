@@ -2,6 +2,10 @@ body {
   display: grid;
   place-items: center;
   font-family: spotify-circular, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: 0.25px;
   margin: 0px;
   color: #181818;
   background-color: #fff;
@@ -13,7 +17,10 @@ body {
 }
 
 h1 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   font-size: 30px;
+  letter-spacing: 0px;
   text-align: center;
 }
 
@@ -24,19 +31,96 @@ h2 {
 
 #logo {
   min-width: 70px;
-  max-width: 140px;
+  max-width: 130px;
   margin-top: 2rem;
 }
 
 form {
-  max-width: 500px;
+  width: 450px;
+}
+
+fieldset {
+  border: none;
+}
+
+input {
+  border-style: solid;
+  border-color: #bdbdbd;
+  border-width: 1px;
+  border-radius: 4px;
+  padding: 14px;
+  min-width: 422px;
+}
+
+.gender {
+  max-width: 422px;
+}
+
+.Male {
+  display: flex;
+  flex-wrap: inline;
+  width: 40px;
+}
+
+.Female {
+  display: flex;
+  flex-wrap: inline;
+  width: 40px;
 }
 
 a {
   color: #1db954;
 }
 
-.footing {
-  text-align: center;
+#ReCAPTCHA {
+  max-width: 304px;
 }
 
+.footing {
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.login {
+  font-size: 16px !important;
+  line-height: 24px !important;
+}
+
+.fbSignIn {
+  display: inline-block;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  width: 450px;
+  height: 50px;
+  border: none;
+  border-radius: 2.5em;
+  background-color: #3b5998;
+}
+
+.fbSignIn:hover {
+  cursor: pointer;
+  transform: scale(1.04);
+  background-color: #8b9dc3;
+}
+
+.spSignUp {
+  display: inline-block;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  width: 450px;
+  height: 50px;
+  border: none;
+  border-radius: 2.5em;
+  background-color: #1db954;
+}
+
+.spSignUp:hover {
+  cursor: pointer;
+  transform: scale(1.04);
+  background-color: #1ed760;
+}

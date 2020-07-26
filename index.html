@@ -10,35 +10,46 @@
     <div class="header">
       <a href="https://spotify.com"><img id="logo" src="Spotify_Logo.png" alt="spotify logo"/></a>
       <h1>Sign up for free to start listening.</h1>
-      <button href="*">SIGN UP WITH FACEBOOK</button>
-      <p>or</p>
     </div>
+      <button class="fbSignIn" type="button">SIGN UP WITH FACEBOOK</button>
+      <span class="divider">
+        ::before
+        or
+        ::after
+      </span>
+    
     <form action="*" method="post">
       <h2>Sign up with your email address</h2>
       <fieldset>
         <label for="email-address">What's your email?</label>
+        <br>
         <input type="email" name="email-address" id="email-address" placeholder="Enter your email."/>
       </fieldset>
       <fieldset>
         <label for="confirm-email-address">Confirm your email</label>
+        <br>
         <input type="email" name="confirm-email-address" id="confirm-email-address" placeholder="Enter your email again."/>
       </fieldset>
       <fieldset>
         <label for="password">Create a password</label>
+        <br>
         <input type="password" name="password" id="password" placeholder="Create a password."/>
       </fieldset>
       <fieldset>
         <label for="profile-name">What should we call you?</label>
+        <br>
         <input type="text" name="profile-name" id="profile-name" placeholder="Enter a profile name."/>
+        <p>This appears on your profile.</p>
       </fieldset>      
       
       <fieldset>
         <label for="birthday">What's your date of birth?</label>
+        <br>
         <input type="date" name="birthday" />
       </fieldset>
      
 
-      <fieldset>
+      <fieldset class="gender">
         <p>Whats your gender?</p>
         <label>
           <input type="radio" name="gender" value="Male" />
@@ -62,7 +73,7 @@
         </label>
       </fieldset>
       
-
+      <img id="ReCAPTCHA" src="reCAPTCHA-placeholder.jpg" alt="reCAPTCHA placeholder"/>
       <!--TODO ReCAPTCHA goes here-->
       <div class="footing">
         <p>
@@ -74,9 +85,9 @@
         personal data please read Spotify's <a href="*">Privacy Policy</a>.
         </p>
 
-        <input type="submit" name="create" value="SIGN UP" />
+        <input class="spSignUp" type="submit" name="create" value="SIGN UP" />
 
-        <p>
+        <p class="login">
           Have an account? <a href="*">Log in</a>.
         </p>
       </div>
