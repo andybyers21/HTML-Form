@@ -1,96 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link href="styles.css" rel="stylesheet" />
-  </head>
-  <body>
-    <div class="header">
-      <a href="https://spotify.com"><img id="logo" src="Spotify_Logo.png" alt="spotify logo"/></a>
-      <h1>Sign up for free to start listening.</h1>
-    </div>
-      <button class="fbSignIn" type="button">SIGN UP WITH FACEBOOK</button>
-      <span class="divider">
-        ::before
-        or
-        ::after
-      </span>
-    
-    <form action="*" method="post">
-      <h2>Sign up with your email address</h2>
-      <fieldset>
-        <label for="email-address">What's your email?</label>
-        <br>
-        <input type="email" name="email-address" id="email-address" placeholder="Enter your email."/>
-      </fieldset>
-      <fieldset>
-        <label for="confirm-email-address">Confirm your email</label>
-        <br>
-        <input type="email" name="confirm-email-address" id="confirm-email-address" placeholder="Enter your email again."/>
-      </fieldset>
-      <fieldset>
-        <label for="password">Create a password</label>
-        <br>
-        <input type="password" name="password" id="password" placeholder="Create a password."/>
-      </fieldset>
-      <fieldset>
-        <label for="profile-name">What should we call you?</label>
-        <br>
-        <input type="text" name="profile-name" id="profile-name" placeholder="Enter a profile name."/>
-        <p>This appears on your profile.</p>
-      </fieldset>      
-      
-      <fieldset>
-        <label for="birthday">What's your date of birth?</label>
-        <br>
-        <input type="date" name="birthday" />
-      </fieldset>
-     
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link href="styles.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="header">
+			<h1>Sign up for Free to Start Something New.</h1>
+		</div>
+		<button class="fbSignIn" type="button">SIGN UP WITH FACEBOOK</button>
+		<span class="divider">or</span>
 
-      <fieldset class="gender">
-        <p>Whats your gender?</p>
-        <label>
-          <input type="radio" name="gender" value="Male" />
-          Male
-        </label>
-        <label>
-          <input type="radio" name="gender" value="Female" />
-          Female
-        </label>
-        <label>
-          <input type="radio" name="gender" value="Non-binary" />
-          Non-binary
-        </label>
-      </fieldset>
+		<form action="*" method="post">
+			<h2>Sign up with your email address</h2>
+			<br />
 
-      
-      <fieldset>
-        <label>
-          <input type="checkbox" name="data-consent" />
-          Share my registration data with Spotify's content providers for marketing purposes. Note that your data may be transferred to a country outside of the EEA as described in our privacy policy.
-        </label>
-      </fieldset>
-      
-      <img id="ReCAPTCHA" src="reCAPTCHA-placeholder.jpg" alt="reCAPTCHA placeholder"/>
-      <!--TODO ReCAPTCHA goes here-->
-      <div class="footing">
-        <p>
-          By clicking on Sign up, you agree to
-        <a href="*">Spotify's Terms and Conditions of Use</a>.
-        </p>
-        <p>
-          To learn more about how Spotify collects, uses, shares and protects your
-        personal data please read Spotify's <a href="*">Privacy Policy</a>.
-        </p>
+			<fieldset>
+				<label for="email-address">What's your email?</label>
+				<br />
+				<input type="email" name="email-address" id="email-address" placeholder="Enter your email." />
+			</fieldset>
 
-        <input class="spSignUp" type="submit" name="create" value="SIGN UP" />
+			<fieldset>
+				<label for="confirm-email-address">Confirm your email</label>
+				<br />
+				<input type="email" name="confirm-email-address" id="confirm-email-address" placeholder="Enter your email again." />
+			</fieldset>
 
-        <p class="login">
-          Have an account? <a href="*">Log in</a>.
-        </p>
-      </div>
-    </form>
-  </body>
+			<fieldset>
+				<label for="password">Create a password</label>
+				<br />
+				<input type="password" name="password" id="password" placeholder="Create a password." />
+			</fieldset>
+
+			<fieldset>
+				<label for="profile-name">What should we call you?</label>
+				<br />
+				<input type="text" name="profile-name" id="profile-name" placeholder="Enter a profile name." />
+				<p class="form-description">This appears on your profile.</p>
+			</fieldset>
+
+			<fieldset>
+				<div class="checkboxes">
+					<input type="checkbox" name="data-consent" id="data-consent" />
+					<label for="data-consent"
+						>Share my registration data with our content providers for marketing purposes. Note that your data may be transferred to a country outside of the EEA as described in
+						our privacy policy.</label>
+				</div>
+			</fieldset>
+
+			<!--TODO ReCAPTCHA goes here-->
+			<div class="footing">
+				<p>By clicking on Sign up, you agree to <a href="*">Imaginary Software's Terms and Conditions of Use</a>.</p>
+
+				<p>To learn more about how we collect, use, share and protect your personal data please read our <a href="*">Privacy Policy</a>.</p>
+
+				<input class="spSignUp" type="submit" name="create" value="SIGN UP" />
+
+				<p class="login">Have an account? <a href="*">Log in</a>.</p>
+			</div>
+		</form>
+	</body>
 </html>

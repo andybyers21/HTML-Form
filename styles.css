@@ -1,7 +1,7 @@
 body {
   display: grid;
   place-items: center;
-  font-family: spotify-circular, Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
@@ -24,15 +24,17 @@ h1 {
   text-align: center;
 }
 
+.divider {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  color: rgb(117, 117, 117);
+  margin-top: 1.5rem;
+}
+
 h2 {
   font-size: 18px;
   text-align: center;
-}
-
-#logo {
-  min-width: 70px;
-  max-width: 130px;
-  margin-top: 2rem;
 }
 
 form {
@@ -41,6 +43,9 @@ form {
 
 fieldset {
   border: none;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
 }
 
 input {
@@ -48,32 +53,26 @@ input {
   border-color: #bdbdbd;
   border-width: 1px;
   border-radius: 4px;
+  margin-top: 14px;
   padding: 14px;
   min-width: 422px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
 }
 
-.gender {
-  max-width: 422px;
-}
-
-.Male {
-  display: flex;
-  flex-wrap: inline;
-  width: 40px;
-}
-
-.Female {
-  display: flex;
-  flex-wrap: inline;
-  width: 40px;
+.form-description {
+  font-size: 13.5px;
+  line-height: 20px;
+  font-weight: 400;
 }
 
 a {
-  color: #1db954;
+  color: #dc143c;
 }
 
-#ReCAPTCHA {
-  max-width: 304px;
+a:hover {
+  color: #1ed760;
 }
 
 .footing {
@@ -85,6 +84,7 @@ a {
 .login {
   font-size: 16px !important;
   line-height: 24px !important;
+  margin-bottom: 60px;
 }
 
 .fbSignIn {
@@ -116,11 +116,17 @@ a {
   height: 50px;
   border: none;
   border-radius: 2.5em;
-  background-color: #1db954;
+  background-color: #dc143c;
 }
 
 .spSignUp:hover {
   cursor: pointer;
   transform: scale(1.04);
   background-color: #1ed760;
+}
+
+#data-consent {
+  margin-top: 0px;
+  padding: 0px;
+  min-width: 0px;
 }
