@@ -1,0 +1,1 @@
+A simple sign-up form to demonstrate client-side form validation using JavaScript.
