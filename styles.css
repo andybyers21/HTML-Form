@@ -1,175 +1,204 @@
 :root {
-  --red: #DC143C;
-  --green: #1ED760;
+	--red: #dc143c;
+	--green: #1ed760;
+	--body-color: #f3f3f8;
 }
 
 body {
-  display: grid;
-  place-items: center;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
-  letter-spacing: 0.25px;
-  margin: 0px;
-  color: #181818;
-  background-color: #fff;
+	display: grid;
+	place-items: center;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 400;
+	letter-spacing: 0.25px;
+	margin: 0px;
+	color: #181818;
+	background-color: var(--body-color);
 }
 
 .reveal .fa {
-  font-family: 'FontAwesome';
-  font-style: normal;
+	font-family: "FontAwesome";
+	font-style: normal;
 }
 
 .header {
-  display: grid;
-  place-items: center;
-  line-height: 30px
+	display: grid;
+	place-items: center;
+	line-height: 30px;
 }
 
 h1 {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  font-size: 30px;
-  letter-spacing: 0px;
-  text-align: center;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	font-size: 30px;
+	letter-spacing: 0px;
+	text-align: center;
 }
 
 .divider {
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 2px;
-  color: rgb(117, 117, 117);
-  margin-top: 1.5rem;
+	font-size: 16px;
+	letter-spacing: 2px;
+	color: rgb(117, 117, 117);
+	margin-top: 1rem;
 }
 
 h2 {
-  font-size: 18px;
-  text-align: center;
+	font-size: 18px;
+	text-align: center;
 }
 
 form {
-  width: 450px;
+	width: 450px;
 }
 
 input {
-  border-style: solid;
-  border-color: #bdbdbd;
-  border-width: 1px;
-  border-radius: 4px;
-  padding: 14px;
-  min-width: 422px;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 20px;
-  box-shadow: none;
+	border-style: solid;
+	border-color: #bdbdbd;
+	border-width: 1px;
+	border-radius: 4px;
+	padding: 14px;
+	min-width: 422px;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 20px;
+	box-shadow: none;
 }
 
-.form-control {
-  border: none;
-  font-size: 14px;
-  font-weight: 700;
+label {
+	margin-top: 10px;
 }
-
-.form-control i {
-  visibility: hidden;
-}
-
-.form-control small {
-  visibility: hidden;
-}
-
-.form-control.success input {
-  box-shadow: 0 0 5px 2px var(--green);
-}
-
-.form-control.error input {
-  box-shadow: 0 0 5px 2px var(--red);
-}
-
-.form-control.success i.fa-check-circle {
-  color: var(--green);
-  visibility: visible;
-}
-
-.form-control.error i.fa-exclamation-circle {
-  color: var(--red);
-  visibility: visible;
-}
-
-.form-control.error small {
-  color: var(--red);
-  visibility: visible;
-}
-
-
 
 .form-description {
-  font-size: 13.5px;
-  line-height: 20px;
-  font-weight: 400;
+	font-size: 13.5px;
+	font-weight: 400;
 }
 
 a {
-  color: var(--red);
+	color: var(--red);
 }
 
 a:hover {
-  color: var(--green);
+	color: var(--green);
 }
 
 .footing {
-  text-align: center;
-  font-size: 12px;
-  line-height: 16px;
+	text-align: center;
+	font-size: 12px;
+	line-height: 16px;
 }
 
 .login {
-  font-size: 16px;
-  line-height: 24px;
-  margin-bottom: 60px;
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 40px;
 }
 
 .fbSignIn {
-  display: inline-block;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  width: 450px;
-  height: 50px;
-  border: none;
-  border-radius: 2.5em;
-  background-color: #3b5998;
+	display: inline-block;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	width: 450px;
+	height: 50px;
+	border: none;
+	border-radius: 2.5em;
+	background-color: #3b5998;
 }
 
 .fbSignIn:hover {
-  cursor: pointer;
-  transform: scale(1.04);
-  background-color: #8b9dc3;
+	cursor: pointer;
+	transform: scale(1.04);
+	background-color: #8b9dc3;
 }
 
 button {
-  display: inline-block;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  width: 450px;
-  height: 50px;
-  border: none;
-  border-radius: 2.5em;
-  background-color: var(--red);
+	display: inline-block;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	width: 450px;
+	height: 50px;
+	border: none;
+	border-radius: 2.5em;
+	background-color: var(--red);
 }
 
 button:hover {
-  cursor: pointer;
-  transform: scale(1.04);
-  background-color: var(--green);
+	cursor: pointer;
+	transform: scale(1.04);
+	background-color: var(--green);
+}
+
+button:active {
+	outline-color: transparent;
+	border-color: transparent;
+}
+
+button:focus {
+	outline-color: transparent;
+	border-color: transparent;
 }
 
 #data-consent {
-  margin-top: 0px;
-  padding: 0px;
-  min-width: 0px;
+	margin-top: 0px;
+	padding: 0px;
+	min-width: 0px;
+}
+
+/* Form Control */
+
+.form-control {
+	border: none;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.form-control i {
+	visibility: hidden;
+}
+
+.form-control small {
+	visibility: hidden;
+}
+
+.form-control.success input {
+	box-shadow: 0 0 5px 2px var(--green);
+}
+
+.form-control.error input {
+	box-shadow: 0 0 5px 2px var(--red);
+}
+
+.form-control.success i.fa-check-circle {
+	color: var(--green);
+	visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+	color: var(--red);
+	visibility: visible;
+}
+
+.form-control.error small {
+	color: var(--red);
+	visibility: visible;
+}
+
+/* Profile Links */
+
+.botnav2 {
+  font-size: 16px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background-color: var(--body-color);
+  text-align: center;
+}
+
+.ltm {
+  padding-right: 20px;
 }

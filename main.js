@@ -28,7 +28,6 @@ function checkInputs() {
 		setSuccessFor(email);
 	}
 
-	//emailConfirmValue
 	if (emailConfirmValue ==="") {
 		setErrorFor(emailConfirm, "You need to confirm your email");
 	} else if (emailConfirmValue !== emailValue) {
@@ -45,7 +44,7 @@ function checkInputs() {
 
 	if (passwordValue === "") {
 		setErrorFor(password, "Please enter a valid password");
-	} //TODO set stipulations for password (e.g. must have uppercase etc.)
+	} // TODO set stipulations for password (e.g. must have uppercase etc.)
 	else {
 		setSuccessFor(password);
 	}
@@ -58,9 +57,7 @@ function checkInputs() {
 		setSuccessFor(passwordConfirm);
 	}
 
-	//dataConsentValue
-
-	//show a success message
+	// TODO show a success message
 }
 
 function setErrorFor(input, message) {
