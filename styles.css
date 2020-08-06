@@ -1,3 +1,8 @@
+:root {
+  --red: #DC143C;
+  --green: #1ED760;
+}
+
 body {
   display: grid;
   place-items: center;
@@ -11,9 +16,15 @@ body {
   background-color: #fff;
 }
 
+.reveal .fa {
+  font-family: 'FontAwesome';
+  font-style: normal;
+}
+
 .header {
   display: grid;
   place-items: center;
+  line-height: 30px
 }
 
 h1 {
@@ -41,25 +52,57 @@ form {
   width: 450px;
 }
 
-fieldset {
-  border: none;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 700;
-}
-
 input {
   border-style: solid;
   border-color: #bdbdbd;
   border-width: 1px;
   border-radius: 4px;
-  margin-top: 14px;
   padding: 14px;
   min-width: 422px;
   font-size: 14px;
   font-weight: 600;
   line-height: 20px;
+  box-shadow: none;
 }
+
+.form-control {
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.form-control i {
+  visibility: hidden;
+}
+
+.form-control small {
+  visibility: hidden;
+}
+
+.form-control.success input {
+  box-shadow: 0 0 5px 2px var(--green);
+}
+
+.form-control.error input {
+  box-shadow: 0 0 5px 2px var(--red);
+}
+
+.form-control.success i.fa-check-circle {
+  color: var(--green);
+  visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  color: var(--red);
+  visibility: visible;
+}
+
+.form-control.error small {
+  color: var(--red);
+  visibility: visible;
+}
+
+
 
 .form-description {
   font-size: 13.5px;
@@ -68,11 +111,11 @@ input {
 }
 
 a {
-  color: #dc143c;
+  color: var(--red);
 }
 
 a:hover {
-  color: #1ed760;
+  color: var(--green);
 }
 
 .footing {
@@ -82,8 +125,8 @@ a:hover {
 }
 
 .login {
-  font-size: 16px !important;
-  line-height: 24px !important;
+  font-size: 16px;
+  line-height: 24px;
   margin-bottom: 60px;
 }
 
@@ -106,7 +149,7 @@ a:hover {
   background-color: #8b9dc3;
 }
 
-.spSignUp {
+button {
   display: inline-block;
   color: #fff;
   font-size: 14px;
@@ -116,13 +159,13 @@ a:hover {
   height: 50px;
   border: none;
   border-radius: 2.5em;
-  background-color: #dc143c;
+  background-color: var(--red);
 }
 
-.spSignUp:hover {
+button:hover {
   cursor: pointer;
   transform: scale(1.04);
-  background-color: #1ed760;
+  background-color: var(--green);
 }
 
 #data-consent {

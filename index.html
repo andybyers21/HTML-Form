@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
+		<script src="https://use.fontawesome.com/6999abb42f.js"></script>
 		<link href="styles.css" rel="stylesheet" />
 	</head>
 	<body>
@@ -13,54 +14,78 @@
 		<button class="fbSignIn" type="button">SIGN UP WITH FACEBOOK</button>
 		<span class="divider">or</span>
 
-		<form action="*" method="post">
-			<h2>Sign up with your email address</h2>
-			<br />
-
-			<fieldset>
+		<h2>Sign up with your email address</h2>
+		<br />
+		<form class="form" id="form" novalidate>
+			<div class="form-control">
 				<label for="email-address">What's your email?</label>
 				<br />
 				<input type="email" name="email-address" id="email-address" placeholder="Enter your email." />
-			</fieldset>
+				<i class="fa fa-check-circle"></i>
+				<i class="fa fa-exclamation-circle"></i>
+				<small>Error Message</small>
+			</div>
 
-			<fieldset>
+			<div class="form-control">
 				<label for="confirm-email-address">Confirm your email</label>
 				<br />
 				<input type="email" name="confirm-email-address" id="confirm-email-address" placeholder="Enter your email again." />
-			</fieldset>
+				<i class="fa fa-check-circle"></i>
+				<i class="fa fa-exclamation-circle"></i>
+				<small>Error Message</small>
+			</div>
 
-			<fieldset>
+			<div class="form-control">
+				<label for="profile-name">What should we call you?</label>
+				<br />
+				<input type="text" placeholder="Enter a profile name." id="profile-name" />
+				<i class="fa fa-check-circle"></i>
+				<i class="fa fa-exclamation-circle"></i>
+				<small>Error Message</small>
+				<p class="form-description">This appears on your profile.</p>
+			</div>
+
+			<div class="form-control">
 				<label for="password">Create a password</label>
 				<br />
 				<input type="password" name="password" id="password" placeholder="Create a password." />
-			</fieldset>
+				<i class="fa fa-check-circle"></i>
+				<i class="fa fa-exclamation-circle"></i>
+				<small>Error Message</small>
+			</div>
 
-			<fieldset>
-				<label for="profile-name">What should we call you?</label>
+			<div class="form-control">
+				<label for="password">Confirm your password</label>
 				<br />
-				<input type="text" name="profile-name" id="profile-name" placeholder="Enter a profile name." />
-				<p class="form-description">This appears on your profile.</p>
-			</fieldset>
+				<input type="password" name="password-confirm" id="password-confirm" placeholder="Enter your password again." />
+				<i class="fa fa-check-circle"></i>
+				<i class="fa fa-exclamation-circle"></i>
+				<small>Error Message</small>
+			</div>
 
-			<fieldset>
+			<div class="form-control">
 				<div class="checkboxes">
 					<input type="checkbox" name="data-consent" id="data-consent" />
 					<label for="data-consent"
-						>Share my registration data with our content providers for marketing purposes. Note that your data may be transferred to a country outside of the EEA as described in
-						our privacy policy.</label>
+						>Share my registration data with our content providers for marketing purposes. Note that your data may be transferred to a country outside of the EEA as described in our privacy
+						policy.</label>
 				</div>
-			</fieldset>
-
-			<!--TODO ReCAPTCHA goes here-->
-			<div class="footing">
-				<p>By clicking on Sign up, you agree to <a href="*">Imaginary Software's Terms and Conditions of Use</a>.</p>
-
-				<p>To learn more about how we collect, use, share and protect your personal data please read our <a href="*">Privacy Policy</a>.</p>
-
-				<input class="spSignUp" type="submit" name="create" value="SIGN UP" />
-
-				<p class="login">Have an account? <a href="*">Log in</a>.</p>
+				<i class="fa fa-check-circle"></i>
+				<i class="fa fa-exclamation-circle"></i>
+				<small>Error Message</small>
 			</div>
+
+			<button>submit</button>
 		</form>
+
+		<div class="footing">
+			<p>By clicking on Sign up, you agree to <a href="*">Imaginary Software's Terms and Conditions of Use</a>.</p>
+
+			<p>To learn more about how we collect, use, share and protect your personal data please read our <a href="*">Privacy Policy</a>.</p>
+
+			<p class="login">Have an account? You can <a href="*">Log in here</a>.</p>
+		</div>
+
+		<script type="text/javascript" src="main.js"></script>
 	</body>
 </html>
