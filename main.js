@@ -4,29 +4,27 @@ let strength = {
 	1: "Bad",
 	2: "Weak",
 	3: "Good",
-	4: "Strong"
-}
+	4: "Strong",
+};
 
-const password = document.getElementById('password');
-const meter = document.getElementById('password-strength-meter');
-const text = document.getElementById('password-strength-text');
+const password = document.getElementById("password");
+const meter = document.getElementById("password-strength-meter");
+const text = document.getElementById("password-strength-text");
 
-password.addEventListener('input', function() {
-  let val = password.value;
-  let result = zxcvbn(val);
+password.addEventListener("input", function () {
+	let val = password.value;
+	let result = zxcvbn(val);
 
-  // Update the password strength meter
-  meter.value = result.score;
+	// Update the password strength meter
+	meter.value = result.score;
 
-  // Update the text indicator
-  if (val !== "") {
-    text.innerHTML = "Strength: " + strength[result.score]; 
-  } else {
-    text.innerHTML = "";
-  }
+	// Update the text indicator
+	if (val !== "") {
+		text.innerHTML = "Strength: " + strength[result.score];
+	} else {
+		text.innerHTML = "";
+	}
 });
-
-
 
 // Form field validation
 const form = document.getElementById("form");
@@ -48,7 +46,6 @@ function checkInputs() {
 	const userNameValue = userName.value.trim();
 	const passwordValue = password.value.trim();
 	const passwordConfirmValue = passwordConfirm.value.trim();
-	const dataConsentValue = dataConsent.value.trim();
 
 	if (emailValue === "") {
 		setErrorFor(email, "You need to enter your email.");
@@ -74,8 +71,7 @@ function checkInputs() {
 
 	if (passwordValue === "") {
 		setErrorFor(password, "Please enter a valid password");
-	} // TODO set stipulations for password (e.g. must have uppercase etc.)
-	else {
+	} else {
 		setSuccessFor(password);
 	}
 
@@ -86,8 +82,6 @@ function checkInputs() {
 	} else {
 		setSuccessFor(passwordConfirm);
 	}
-
-	// TODO show a success message
 }
 
 function setErrorFor(input, message) {
