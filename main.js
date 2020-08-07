@@ -1,8 +1,38 @@
+// Password strength
+let strength = {
+	0: "Worst",
+	1: "Bad",
+	2: "Weak",
+	3: "Good",
+	4: "Strong"
+}
+
+const password = document.getElementById('password');
+const meter = document.getElementById('password-strength-meter');
+const text = document.getElementById('password-strength-text');
+
+password.addEventListener('input', function() {
+  let val = password.value;
+  let result = zxcvbn(val);
+
+  // Update the password strength meter
+  meter.value = result.score;
+
+  // Update the text indicator
+  if (val !== "") {
+    text.innerHTML = "Strength: " + strength[result.score]; 
+  } else {
+    text.innerHTML = "";
+  }
+});
+
+
+
+// Form field validation
 const form = document.getElementById("form");
 const email = document.getElementById("email-address");
 const emailConfirm = document.getElementById("confirm-email-address");
 const userName = document.getElementById("profile-name");
-const password = document.getElementById("password");
 const passwordConfirm = document.getElementById("password-confirm");
 const dataConsent = document.getElementById("data-consent");
 
@@ -28,12 +58,12 @@ function checkInputs() {
 		setSuccessFor(email);
 	}
 
-	if (emailConfirmValue ==="") {
+	if (emailConfirmValue === "") {
 		setErrorFor(emailConfirm, "You need to confirm your email");
 	} else if (emailConfirmValue !== emailValue) {
 		setErrorFor(emailConfirm, "This email addresses don't match.");
 	} else {
-		setSuccessFor(emailConfirm)
+		setSuccessFor(emailConfirm);
 	}
 
 	if (userNameValue === "") {
@@ -53,7 +83,7 @@ function checkInputs() {
 		setErrorFor(passwordConfirm, "Please enter a valid password");
 	} else if (passwordConfirmValue !== passwordValue) {
 		setErrorFor(passwordConfirm, "Password does not match");
-	}	else {
+	} else {
 		setSuccessFor(passwordConfirm);
 	}
 

@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js"></script>
 		<script src="https://use.fontawesome.com/6999abb42f.js"></script>
 		<link href="styles.css" rel="stylesheet" />
 	</head>
@@ -16,7 +17,7 @@
 
 		<h2>Sign up with your email address</h2>
 		<br />
-		<form class="form" id="form" novalidate>
+		<form action="#" class="form" id="form" novalidate>
 			<div class="form-control">
 				<label for="email-address">What's your email?</label>
 				<br />
@@ -51,6 +52,9 @@
 				<i class="fa fa-check-circle"></i>
 				<i class="fa fa-exclamation-circle"></i>
 				<small>Error Message</small>
+
+				<meter max="4" id="password-strength-meter"></meter>
+				<p id="password-strength-text"></p>
 			</div>
 
 			<div class="form-control">
@@ -87,13 +91,11 @@
 			<p class="login">Have an account? You can <a href="*">Log in here</a>.</p>
 		</div>
 
-		<!-- TODO add links to githum and portfolio -->
-
-    <nav class="botnav2">
-      <a class="ltm" href="https://github.com/andybyers21/HTML-Form">GitHub</a>
-      <a class="ltm" href="https://andybyers.net">Contact Me</a>
-      <a class="ltm" href="https://andybyers.net">My Portfolio</a>
-    </nav>
+		<nav class="botnav2">
+			<a class="ltm" href="https://github.com/andybyers21/HTML-Form">GitHub</a>
+			<a class="ltm" href="mailto:someone@yoursite.com">Contact Me</a>
+			<a class="ltm" href="https://andybyers.net">My Portfolio</a>
+		</nav>
 
 		<script type="text/javascript" src="main.js"></script>
 	</body>
