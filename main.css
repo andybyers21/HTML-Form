@@ -1,7 +1,9 @@
 h1 {
-  font-size: 43px;
+  font-size: 33px;
 }
 
 li {
-  font-size: 22px;
+  margin-top: 8px;
+  margin-left: 30px;
+  font-size: 20px;
 }
