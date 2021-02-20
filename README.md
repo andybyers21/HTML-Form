@@ -11,6 +11,8 @@ A simple sign-up form to demonstrate client-side form validation using JavaScrip
 Using [zxcvbn](https://github.com/dropbox/zxcvbn) to calculate password
 strength.
 
+![HTML Form Validation Screenshot](/screenshots/htmlform.png)
+
 ---
 
 ## Dark Mode
@@ -18,3 +20,4 @@ strength.
 Experimenting in JavaScript with a toggleable dark mode implementation, set
 based on system UI, using CSS variables.
 
+![Dark mode screenshot](/screenshots/dark-mode.png)
